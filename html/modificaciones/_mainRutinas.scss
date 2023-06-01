@@ -1,0 +1,59 @@
+//////////// MAIN RUTINAS /////////////
+
+@mixin normalize-seccion {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: rgb(50, 50, 50);
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-rutinas {
+    @include normalize-seccion();
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.div-card-rutinas {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+.img-card-rutinas {
+    display: flex;
+    max-width: 650px;
+}
+
+.DivRutinas {
+    text-align: center;
+    color: rgb(252, 246, 246);
+    text-shadow: rgb(247, 237, 237) 0.1em 0.1em 0.2em;
+}
+
+.ParrafoRutinas {
+    text-align: center;
+    color: rgb(211, 198, 198);
+    text-shadow: rgb(125, 178, 115) 0.1em 0.1em 0.2em;
+}
+
+////MEDIAQUERIES///
+
+@media (min-device-width: 180px) and (max-device-width: 950px) {
+    .h1Rutinas {
+        margin-bottom: 1vh;
+    }
+    .body__main {
+        margin-bottom: 3px;
+    }
+    .card-rutinas {
+        flex-direction: column;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .img-card-rutinas {
+        display: flex;
+        width: 100%;
+    }
+}
