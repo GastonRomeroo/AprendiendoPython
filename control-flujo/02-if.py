@@ -9,5 +9,3 @@ elif edad > 17:
 else:
     print("No puedes entrar")
 print("Listo")
-
-
